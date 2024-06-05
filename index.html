@@ -1,0 +1,41 @@
+<br>
+<div class="container" style="max-width: 650px; min-width: 400px;">
+  <div class="card">
+    <h2 class="card-header text-center">formulario</h2>
+    <div class="card-body">
+      <form id="myForm" onsubmit="return validar()">
+        <div class="form-group">
+          <legend>Cadastro</legend>
+          <label for="user">Usuario:</label>
+          <input type="text" class="form-control" id="user" placeholder="Usuario">
+          <label for="email">Email:</label>
+          <input type="email" class="form-control" id="email" placeholder="nome@exemplo.com">
+          <label for="Pass1">Senha:</label>
+          <input type="password" class="form-control" id="pass1" placeholder="Senha">
+          <label for="pass2">Conirmar senha:</label>
+          <input type="password" class="form-control" id="pass2" placeholder="Confirmar senha">
+          <label for="codipos">Cep:</label>
+          <input type="text" class="form-control" id="codipos" placeholder="79000-000">
+        </div>
+
+        <div class="form-group">
+          <legend>Dados pessoais:</legend>
+          <label for="sexo">Sexo:</label>
+          <input type="radio" id="sexo" name="sexo"> Masculino
+          <input type="radio" id="sexo" name="sexo"> Feminino <br>
+          <label for="cidade">Cidade:</label>      
+            <select class="form-control" id="cidade">
+              <option value="Lota">Selecionar</option>
+              <option value="campo grande">Campo Grande</option>
+              <option value="Terenos">Terenos</option>
+              <option value="sidrolandia">Sidrolandia</option>
+            </select>      
+          <label for="termos">Termos:</label><br>
+          <input type="checkbox" id="termos"> Aceita os termos e condiçoes          
+        </div>
+        <input type="submit" class="btn btn-success" id="boton" value="Registrar">
+        <input type="reset" class="btn btn-danger" id="boton" value="Reiniciar">
+      </form>
+    </div>
+  </div>
+</div>
